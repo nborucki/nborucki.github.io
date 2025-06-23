@@ -11,12 +11,12 @@ body {
 header {
   text-align: center;
   background-color: #f9f9f9;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .banner {
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -65,3 +65,4 @@ footer {
   color: #777;
   border-top: 1px solid #ddd;
 }
+
