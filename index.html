@@ -53,39 +53,10 @@
               <button class="prev" onclick="prevSlide()">❮</button>
               <button class="next" onclick="nextSlide()">❯</button>
             </div>
- <div class="slide-wrapper" style="display: none;"><img class="slide" src="1.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="2.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="3.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="4.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="5.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="6.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="7.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="8.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="9.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="10.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="11.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="12.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="13.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="14.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="15.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="16.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="17.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="18.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="19.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="20.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="21.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="22.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="23.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="24.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="25.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="26.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="27.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="28.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="29.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="30.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="31.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="32.jpg"></div>
-  <div class="slide-wrapper" style="display: none;"><img class="slide" src="33.j
+  <div class="slideshow-thumbnails">
+    " +
+      "".join([f"<img src='{name}' onclick='goToSlide({i})'>
+    " for i, name in enumerate(['01.jpg', '02.jpg', '03.jpg'] + [f"{j}.jpg" for j in range(1,
             </div>
           </section>
           <p>Co-designed a non-pneumatic wheel and hub assembly featuring an auxetic mesh with a negative Poisson’s ratio to optimize stress distribution on deformable lunar terrain. Conducted stress analysis in Autodesk FEA and fabricated a 3D-printed prototype in collaboration with Sage Edwards.</p>
