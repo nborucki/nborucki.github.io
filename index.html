@@ -48,15 +48,14 @@
                 <img class="slide" src="03.jpg">
                 <div class="caption">Close-up of auxetic mesh under load. Mesh compresses in the direction of the normal force and transversely, demonstrating negative Poisson’s ratio behavior due to internal geometry.</div>
               </div>
+              <div class="slide-wrapper" style="display: none;"><img class="slide" src="1.jpg"></div>
+              <div class="slide-wrapper" style="display: none;"><img class="slide" src="2.jpg"></div>
             </div>
             <div class="slideshow-controls">
               <button class="prev" onclick="prevSlide()">❮</button>
               <button class="next" onclick="nextSlide()">❯</button>
             </div>
-  <div class="slideshow-thumbnails">
-    " +
-      "".join([f"<img src='{name}' onclick='goToSlide({i})'>
-    " for i, name in enumerate(['01.jpg', '02.jpg', '03.jpg'] + [f"{j}.jpg" for j in range(1,
+
             </div>
           </section>
           <p>Co-designed a non-pneumatic wheel and hub assembly featuring an auxetic mesh with a negative Poisson’s ratio to optimize stress distribution on deformable lunar terrain. Conducted stress analysis in Autodesk FEA and fabricated a 3D-printed prototype in collaboration with Sage Edwards.</p>
