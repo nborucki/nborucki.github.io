@@ -192,10 +192,16 @@
     function goToSlide(index) {
       showSlide(index);
     }
+    thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener("click", (e) => {
+      e.preventDefault();
+      goToSlide(index);
+    });
+  });
 
-    showSlide(currentSlide);
-    setInterval(nextSlide, 4000);
-  </script>
+  showSlide(currentSlide);
+  setInterval(nextSlide, 4000);
+</script>
 </body>
 </html>
 
